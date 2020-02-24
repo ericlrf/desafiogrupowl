@@ -77,21 +77,21 @@
         </dependency>
         <!-- Spring Fox 2 -->
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>28.2-jre</version>
-        </dependency>
+      		<groupId>com.google.guava</groupId>
+      		<artifactId>guava</artifactId>
+      		<version>28.2-jre</version>
+      		<exclusions>
+        		<exclusion>
+          			<groupId>com.google.guava</groupId>
+          			<artifactId>guava</artifactId>
+        		</exclusion>
+      		</exclusions>
+    	</dependency>
 		<dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>28.2-jre</version>
-      <exclusions>
-        <exclusion>
-          <groupId>com.google.guava</groupId>
-          <artifactId>guava</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 
