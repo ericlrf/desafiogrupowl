@@ -25,8 +25,8 @@ public class SwaggerConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2).select()
-            .apis(RequestHandlerSelectors.basePackage("org.baeldung.web.controller"))
-            .paths(PathSelectors.ant("/foos/*"))
+            .apis(RequestHandlerSelectors.any())
+            .paths(PathSelectors.ant("/api/*"))
             .build()
             .apiInfo(apiInfo())
             .useDefaultResponseMessages(false)
