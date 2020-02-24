@@ -1,9 +1,9 @@
-DROP TABLE IF EXISTS todo;
-CREATE TABLE todo
+DROP TABLE IF EXISTS usuario;
+CREATE TABLE usuario
 (
   id varchar(36) not null primary key,
-  description varchar(255) not null,
-  created timestamp,
-  modified timestamp,
-  completed boolean
+  nome varchar(255) not null,
+  cpf varchar(255) not null,
+  datanascimento varchar(255) not null,
+  senha varchar(255)
 );

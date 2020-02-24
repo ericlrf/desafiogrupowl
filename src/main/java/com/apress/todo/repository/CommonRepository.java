@@ -1,7 +1,5 @@
 package com.apress.todo.repository;
 
-import com.apress.todo.domain.ToDo;
-
 import java.util.Collection;
 
 public interface  CommonRepository<T> {

@@ -1,7 +1,8 @@
+C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\controller\UsuarioController.java
 C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\repository\CommonRepository.java
 C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\TodoJdbcApplication.java
 C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\validation\ToDoValidationError.java
-C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\domain\ToDo.java
-C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\domain\ToDoBuilder.java
-C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\controller\ToDoController.java
-C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\repository\ToDoRepository.java
+C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\validation\ToDoValidationErrorBuilder.java
+C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\domain\Usuario.java
+C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\domain\UsuarioBuilder.java
+C:\Users\Lenovo\Desktop\SPRING\DESAFIO GRUPO WL\pro-spring-boot-2-master\pro-spring-boot-2nd\ch05\todo-jdbc\src\main\java\com\apress\todo\repository\UsuarioRepository.java
