@@ -25,9 +25,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
 @SpringBootApplication
 @EnableSwagger2WebMvc
-@ComponentScan(basePackageClasses = {
-		UsuarioController.class
-})
 public class TodoJdbcApplication {
 
 	public static void main(String[] args) {
