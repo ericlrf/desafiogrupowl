@@ -24,23 +24,16 @@ public class SwaggerConfig {
 
     @Bean
     public Docket api() {
-        return new Docket(DocumentationType.SWAGGER_2).select()
-            .apis(RequestHandlerSelectors.any())
-            .paths(PathSelectors.ant("/api/*"))
-            .build()
-            .apiInfo(apiInfo())
-            .useDefaultResponseMessages(false)
-            .globalResponseMessage(RequestMethod.GET, newArrayList(new ResponseMessageBuilder().code(500)
-                .message("500 message")
-                .responseModel(new ModelRef("Error"))
-                .build(),
-                new ResponseMessageBuilder().code(403)
-                    .message("Forbidden!!!!!")
-                    .build()));
+        return new Docket(DocumentationType.SWAGGER_2)
+        		.select()
+        		.apis(RequestHandlerSelectors.basePackage("com.apress.todo"))
+        		.paths(PathSelectors.any())
+        		.build()
+        		.apiInfo(apiInfo());
     }
 
     private ApiInfo apiInfo() {
-        ApiInfo apiInfo = new ApiInfo("My REST API", "Some custom description of API.", "API TOS", "Terms of service", new Contact("John Doe", "www.example.com", "myeaddress@company.com"), "License of API", "API license URL", Collections.emptyList());
+        ApiInfo apiInfo = new ApiInfo("DESAFIO - GRUPO WL", "CRUD para cadastro de usuários", "API REST", "Terms of service", new Contact("ERIC L. R. F.", "www.example.com", "myeaddress@company.com"), "License of API", "API license URL", Collections.emptyList());
         return apiInfo;
     }
 }
