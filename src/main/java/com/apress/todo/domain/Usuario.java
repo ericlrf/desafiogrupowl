@@ -1,5 +1,8 @@
 package com.apress.todo.domain;
 
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Date;
 import java.util.UUID;
 
@@ -54,7 +57,8 @@ public class Usuario {
 	private String senha;
 	
 	public Usuario() {
-		this.id = UUID.randomUUID().toString();	
+		this.id = UUID.randomUUID().toString();
+		this.senha = "";
 	}
 	
 	public Usuario(String nome, String cpf, Date datanascimento) {
@@ -69,7 +73,20 @@ public class Usuario {
 		// funcao p/ gerar campo senha aqui:
 		// 3 primeiros dígitos do cpf + mês de nascimento
 		// criptografado em SHA-1
-		return null;
+		String valor = "";
+		String sha1 = "";
+		valor = cpf.substring(0, 3);
+		valor = valor.concat(String.valueOf(datanascimento.getMonth()+1));
+		try {
+			MessageDigest digest = MessageDigest.getInstance("SHA-1");
+			digest.reset();
+			digest.update(valor.getBytes("utf8"));
+			sha1 = String.format("%040x", new BigInteger(1, digest.digest()));
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return sha1;
 	}
 
 }

@@ -54,7 +54,7 @@ public class UsuarioRepository  implements CommonRepository<Usuario>{
 		namedParameters.put("nome", usuario.getNome());
 		namedParameters.put("cpf", usuario.getCpf());
 		namedParameters.put("datanascimento", usuario.getDatanascimento());
-		namedParameters.put("senha", usuario.getSenhaHash(usuario.getCpf, usuario.getDatanascimento));
+		namedParameters.put("senha", usuario.getSenhaHash(usuario.getCpf(), usuario.getDatanascimento()));
 		
 		this.jdbcTemplate.update(sql, namedParameters);
 		return findById(usuario.getId());
