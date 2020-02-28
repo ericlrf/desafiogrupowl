@@ -91,11 +91,11 @@ public class UsuarioController {
 	//					//	
 	
 	@ApiOperation(value = "Cadastrar(POST) / Atualizar(PUT) um usuário", 
-			notes = "Cadastra no banco de dados (método POST) um novo registro na tabela usuario de acordo com os dados informados em formato JSON"
-					+ " / Atualiza no banco de dados (método PUT) um registro já existente na tabela usuario de acordo com os dados informados (incluindo o ID) em formato JSON", 
+			notes = "Cadastra no banco de dados (método POST) um novo registro na tabela usuario de acordo com os dados informados (não incluir o ID) em formato JSON"
+					+ " / Atualiza no banco de dados (método PUT) um registro já existente na tabela usuario de acordo com os dados informados (incluir o ID) em formato JSON", 
 			consumes = "application/json")
 	@ApiResponses(value = {
-			@ApiResponse(code = 200, message = "Resposta recebida"),
+			@ApiResponse(code = 200, message = "Resposta recebida (pode conter mensagem de erros)"),
 			@ApiResponse(code = 201, message = "Usuário cadastrado/atualizado com sucesso"),
 			@ApiResponse(code = 400, message = "Erro de validação, campo(s) inválido(s)"),
 			@ApiResponse(code = 401, message = "Não autorizado"),

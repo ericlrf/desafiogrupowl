@@ -1,1 +1,9 @@
+com\apress\todo\repository\CommonRepository.class
 com\apress\todo\validation\ToDoValidationErrorBuilder.class
+com\apress\todo\controller\UsuarioController.class
+com\apress\todo\TodoJdbcApplication.class
+com\apress\todo\repository\UsuarioRepository.class
+com\apress\todo\domain\UsuarioBuilder.class
+com\apress\todo\swagger2\SwaggerConfig.class
+com\apress\todo\domain\Usuario.class
+com\apress\todo\validation\ToDoValidationError.class
