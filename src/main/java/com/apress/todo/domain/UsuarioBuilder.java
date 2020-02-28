@@ -1,11 +1,13 @@
 package com.apress.todo.domain;
 
+import java.util.Date;
+
 public class UsuarioBuilder {
 	private static UsuarioBuilder instance = new UsuarioBuilder();
 	private String id = null;
 	private String nome = "";
 	private String cpf = "";
-	private String datanascimento = "";
+	private Date datanascimento = null;
 	private String senha = "";
 	
 	private UsuarioBuilder(){}
@@ -14,7 +16,7 @@ public class UsuarioBuilder {
 		return instance;
 	}
 	
-	public UsuarioBuilder withInformation(String nome, String cpf, String datanascimento, String senha) {
+	public UsuarioBuilder withInformation(String nome, String cpf, Date datanascimento, String senha) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.datanascimento = datanascimento;
