@@ -9,6 +9,6 @@
 </ol>
 </hr>
 <ul>
-<li>APLICAÇÃO BACK-END (API REST):</li>
+<li>APLICAÇÃO BACK-END (API REST): https://damp-chamber-19836.herokuapp.com/swagger-ui.html</li>
 <li>APLICAÇÃO FRONT-END (CONSOME API REST):</li>
 </ul>
